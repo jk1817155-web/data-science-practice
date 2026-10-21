@@ -39,3 +39,5 @@ does not require an API key.
 ## Learning Goals
 Learn API requests, data collection, data analysis,
 CSV files, and data visualization.
+
+![Hourly Temperature Forecast](Screenshot_20261021-204011.png)
