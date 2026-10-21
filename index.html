@@ -1,0 +1,251 @@
+4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Data Science Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f6ff;
+      color: #17233f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b1730;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 span {
+      color: #39a0ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 12px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #0b1730, #173d78);
+      color: white;
+      padding: 65px 8%;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 7vw, 48px);
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #39a0ff;
+    }
+
+    .hero p {
+      max-width: 550px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #1685ff;
+      color: white;
+      text-decoration: none;
+      padding: 11px 18px;
+      border-radius: 8px;
+      margin: 5px 5px 5px 0;
+    }
+
+    section {
+      padding: 45px 8%;
+    }
+
+    section h2 {
+      margin-bottom: 16px;
+      color: #123b79;
+    }
+
+    .projects {
+      background: #e6f1ff;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px #173d7812;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e1efff;
+      color: #0755aa;
+      padding: 4px 9px;
+      margin: 10px 3px 8px 0;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    .card a {
+      color: #086bd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: white;
+      border: 1px solid #d7e6ff;
+      padding: 9px 14px;
+      margin: 5px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      background: #0b1730;
+      color: white;
+      padding: 25px 12px;
+    }
+
+    footer a {
+      color: #70b8ff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>My <span>Portfolio</span></h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Hello, I'm <span>Jeevan Kumar</span></h1>
+    <h3>B.Tech Data Science Student</h3>
+    <p>
+      I am learning Python, Data Science and web development.
+      I enjoy building useful projects and learning new technologies.
+    </p>
+    <a class="btn"
+       href="https://github.com/"
+       target="_blank" rel="noopener">
+      Visit GitHub
+    </a>
+    <a class="btn" href="#projects">Explore Projects</a>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a student interested in data analysis, Python programming,
+      visualization and machine learning. I am building projects
+      to improve my practical skills.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+
+      <div class="card">
+        <h3>🌦️ Weather Analysis</h3>
+        <p>Fetches weather forecasts and displays temperature graphs.</p>
+        <span class="tag">Python</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Matplotlib</span>
+        <p>
+          <a href="https://github.com/"
+             target="_blank" rel="noopener">View on GitHub →</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🤖 JARVIS Assistant</h3>
+        <p>A beginner voice assistant project built with Python.</p>
+        <span class="tag">Python</span>
+        <span class="tag">Automation</span>
+        <p>
+          <a href="https://github.com/"
+             target="_blank" rel="noopener">View on GitHub →</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📊 Data Analysis</h3>
+        <p>A place to showcase future data analysis projects.</p>
+        <span class="tag">Python</span>
+        <span class="tag">Data Science</span>
+        <p>
+          <a href="https://github.com/"
+             target="_blank" rel="noopener">View on GitHub →</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>Matplotlib</span>
+      <span>SQL</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Data Analysis</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in my projects? Visit my GitHub profile.</p>
+    <a class="btn" href="https://github.com/"
+       target="_blank" rel="noopener">My GitHub Profile</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Jeevan Kumar | Built with HTML and CSS</p>
+  </footer>
+
+</body>
+</html>
